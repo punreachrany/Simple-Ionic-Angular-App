@@ -1,0 +1,14 @@
+<ion-item>
+    <ion-label>
+        <div class="ion-text-capitalize ion-margin-button">
+            {{dummyUserList['title']}}
+            {{dummyUserList['first_name']}}
+            {{dummyUserList['last_name']}}
+        </div>
+        <div>
+            <span>{{dummyUserList['gender']}}</span>
+            <span>{{dummyUserList['birthdate'] | date}}</span>
+        </div>
+    </ion-label>
+    <img class="profile-container" src="../../../assets/images/user.jpg" />
+</ion-item>

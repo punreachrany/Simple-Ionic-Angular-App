@@ -7,14 +7,18 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <!-- Profile Component -->
+  <div class="ion-padding">
+    <app-profile-img></app-profile-img>
   </div>
+
+  <!-- user-detail component -->
+  <app-user-detail></app-user-detail>
+
 </ion-content>
+
+<ion-footer class="ion-text-center">
+  <ion-button class="second-page-btn" (click)="onClick" shape="round">
+    Second Page
+  </ion-button>
+</ion-footer>
